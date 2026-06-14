@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lighting design project detail and lighting plans preview.">
+  <title>Project | Elvis Yi Lighting Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header solid">
+    <a class="brand" href="index.html" aria-label="Elvis Yi portfolio home">
+      <span class="brand-mark">EY</span>
+      <span>Elvis Yi</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html" data-i18n="navHome">Home</a>
+      <div class="language-toggle" aria-label="Language">
+        <button type="button" data-lang-button="en" class="active">EN</button>
+        <button type="button" data-lang-button="zh">中文</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page" data-project-detail>
+    <section class="section detail-layout">
+      <div class="project-body">
+        <section class="detail-section project-overview reveal">
+          <h1 class="project-body-title" data-project-body-title></h1>
+          <dl class="project-inline-meta" data-project-meta></dl>
+          <h2 data-i18n="projectNotes">Project Notes</h2>
+          <p data-project-description></p>
+        </section>
+
+        <section class="detail-section reveal" data-gallery-section hidden>
+          <h2 data-i18n="gallery">Gallery</h2>
+          <div class="gallery" data-project-gallery></div>
+        </section>
+
+        <section class="detail-section pdf-section reveal">
+          <div class="pdf-heading">
+            <div>
+              <h2 data-i18n="pdfPreview">Lighting Plans Preview</h2>
+            </div>
+          </div>
+          <div class="pdf-list" data-project-pdf-list></div>
+          <p class="pdf-empty" data-project-pdf-empty hidden data-i18n="noPdf">No PDF has been added for this project yet.</p>
+          <iframe class="pdf-viewer" data-project-pdf title="Project lighting plans preview"></iframe>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" data-lightbox hidden>
+    <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close image preview">x</button>
+    <img data-lightbox-image alt="">
+  </div>
+
+  <script src="data/projects.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
