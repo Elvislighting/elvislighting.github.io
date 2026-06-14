@@ -274,8 +274,8 @@ window.PORTFOLIO_PROJECTS = [
       "zh": "中国无锡"
     },
     "role": {
-      "en": "Assistant Lighting Designer / Lighting Operator",
-      "zh": "助理灯光设计师 / 灯光操作"
+      "en": "Lighting Systems Designer / Lighting Operator",
+      "zh": "灯光系统设计师 / 灯光操作"
     },
     "client": "",
     "cover": "",
