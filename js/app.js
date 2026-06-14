@@ -20,6 +20,7 @@
       gallery: "Gallery",
       pdfPreview: "Lighting Plans Preview",
       noPdf: "No PDF has been added for this project yet.",
+      openPdf: "Open full PDF",
       coverPending: "Cover pending",
       openProject: "Open",
       all: "All",
@@ -41,6 +42,7 @@
       gallery: "图片",
       pdfPreview: "Lighting Plans Preview",
       noPdf: "这个项目还没有添加 PDF 图纸。",
+      openPdf: "打开完整 PDF",
       coverPending: "等待添加封面",
       openProject: "打开",
       all: "全部",
@@ -287,24 +289,28 @@
     var pdfs = project.pdfs || (project.pdf ? [{ title: { en: "PDF", zh: "PDF" }, file: project.pdf }] : []);
     var list = qs("[data-project-pdf-list]");
     var iframe = qs("[data-project-pdf]");
+    var openLink = qs("[data-project-pdf-open]");
     var empty = qs("[data-project-pdf-empty]");
-    if (!list || !iframe || !empty) return;
+    if (!list || !iframe || !empty || !openLink) return;
 
     list.innerHTML = "";
     if (pdfs.length === 0) {
       empty.hidden = false;
       iframe.hidden = true;
+      openLink.hidden = true;
       return;
     }
 
     empty.hidden = true;
     iframe.hidden = false;
+    openLink.hidden = false;
 
     function selectPdf(pdf, selectedButton) {
       qsa(".pdf-option", list).forEach(function (button) {
         button.classList.toggle("active", button === selectedButton);
       });
       iframe.src = pdf.file;
+      openLink.href = pdf.file;
     }
 
     pdfs.forEach(function (pdf, index) {
