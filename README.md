@@ -99,6 +99,7 @@ Edit this line in `data/projects.js`:
 
 ```js
 window.PORTFOLIO_FILTERS = ["All", "Theme Park", "Ceremony", "Show", "Concert"];
+Portfolio Website
 ```
 
 ## Contact Link
