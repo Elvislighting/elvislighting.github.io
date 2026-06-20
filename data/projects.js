@@ -1857,8 +1857,8 @@ window.PORTFOLIO_PROJECTS = [
       "zh": "澳大利亚布里斯班"
     },
     "role": {
-      "en": "Lighting Operator",
-      "zh": "灯光操作"
+      "en": "Lighting technician / Lighting Operator",
+      "zh": "灯光技术员 / 灯光操作"
     },
     "client": {
       "en": "Queensland Symphony Orchestra",
@@ -1895,6 +1895,36 @@ window.PORTFOLIO_PROJECTS = [
     "description": {
       "en": "A Queensland Symphony Orchestra performance at QPAC, one of Brisbane's main performing arts venues. The project sits within a formal concert-hall context and a refined orchestral atmosphere.",
       "zh": "QPAC 昆士兰交响乐团项目位于布里斯班主要表演艺术场馆之一，属于正式音乐厅语境中的交响乐现场。"
+    },
+    "gallery": []
+  },
+  {
+    "id": "beijing-olympic-games-2008",
+    "title": {
+      "en": "Beijing 2008 Olympic Games",
+      "zh": "2008北京奥运会"
+    },
+    "category": "Show",
+    "tags": [
+      "Show"
+    ],
+    "year": "2008",
+    "venue": {
+      "en": "Beijing, China",
+      "zh": "中国北京"
+    },
+    "role": {
+      "en": "MA Systems Technical Support",
+      "zh": "MA系统技术支持"
+    },
+    "pdfs": [],
+    "summary": {
+      "en": "The Beijing 2008 Olympic Games was a landmark international sporting event, combining large-scale ceremonies, iconic venues, and a global cultural presentation.",
+      "zh": "2008北京奥运会是具有里程碑意义的国际体育盛会，融合大型仪式、标志性场馆与面向全球的文化呈现。"
+    },
+    "description": {
+      "en": "The Beijing 2008 Olympic Games was a landmark international sporting event, combining large-scale ceremonies, iconic venues, and a global cultural presentation.",
+      "zh": "2008北京奥运会是具有里程碑意义的国际体育盛会，融合大型仪式、标志性场馆与面向全球的文化呈现。"
     },
     "gallery": []
   }
